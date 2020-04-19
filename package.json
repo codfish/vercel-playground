@@ -1,0 +1,51 @@
+{
+  "name": "now-playground",
+  "version": "0.0.0-semantically-released",
+  "description": "Testing ground for zeit's now platform.",
+  "homepage": "https://github.com/codfish/now-playground",
+  "author": {
+    "name": "Chris O'Donnell",
+    "email": "dev@codfish.io",
+    "url": "https://codfish.io"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/runtime": "^7.9.2"
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6",
+    "yarn": ">=1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codfish/now-playground.git"
+  },
+  "scripts": {
+    "build": "cod-scripts build",
+    "build:watch": "npm run build -- --watch",
+    "format": "cod-scripts format",
+    "lint": "cod-scripts lint",
+    "lint:commit": "cod-scripts commitlint",
+    "test": "cod-scripts test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/cod-scripts/eslint.js"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "cod-scripts pre-commit",
+      "commit-msg": "cod-scripts commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "cod-scripts": "^4.0.2"
+  }
+}
