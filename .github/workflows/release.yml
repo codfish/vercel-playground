@@ -19,16 +19,8 @@ jobs:
       - name: validate before release
         run: |
           npm install --no-save
-          npm run build
           npm run lint
           npm run test
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           CI: true
-
-      - name: semantic release
-        uses: codfish/semantic-release-action@v1
-        id: semantic
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

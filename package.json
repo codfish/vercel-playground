@@ -8,9 +8,6 @@
     "email": "dev@codfish.io",
     "url": "https://codfish.io"
   },
-  "files": [
-    "dist"
-  ],
   "main": "dist/index.js",
   "keywords": [],
   "license": "MIT",
@@ -27,8 +24,6 @@
     "url": "https://github.com/codfish/now-playground.git"
   },
   "scripts": {
-    "build": "cod-scripts build",
-    "build:watch": "npm run build -- --watch",
     "format": "cod-scripts format",
     "lint": "cod-scripts lint",
     "lint:commit": "cod-scripts commitlint",
@@ -41,8 +36,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "cod-scripts pre-commit",
-      "commit-msg": "cod-scripts commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "cod-scripts pre-commit"
     }
   },
   "dependencies": {

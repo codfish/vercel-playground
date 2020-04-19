@@ -16,18 +16,8 @@ jobs:
       - name: install dependencies
         run: npm install --no-save
 
-      - name: lint commits
-        run:
-          npm run lint:commit -- --from="origin/${{ github.base_ref }}"
-          --to="origin/${{github.head_ref }}"
-
       - name: lint js
         run: npm run lint
-
-      - name: build
-        run: npm run build
-        env:
-          CI: true
 
       - name: run tests
         run: npm run test
