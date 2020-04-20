@@ -34,11 +34,6 @@
       "./node_modules/cod-scripts/eslint.js"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "cod-scripts pre-commit"
-    }
-  },
   "dependencies": {
     "cod-scripts": "^4.0.2"
   }
