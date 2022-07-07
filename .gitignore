@@ -94,5 +94,5 @@ typings/
 dist
 build
 
-.now
+.vercel
 .env.build
