@@ -34,6 +34,6 @@
     ]
   },
   "dependencies": {
-    "cod-scripts": "^4.0.2"
+    "cod-scripts": "^12.0.0"
   }
 }
